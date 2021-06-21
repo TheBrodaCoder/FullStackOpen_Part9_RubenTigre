@@ -1,0 +1,2 @@
+GET http://localhost:3002/bmi?height=190&&weight=100 HTTP/1.1
+
