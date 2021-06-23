@@ -32,7 +32,8 @@ const addPatient = (name: string, occupation: string, gender: Gender, ssn: strin
         occupation,
         gender,
         ssn,
-        dateOfBirth
+        dateOfBirth,
+        entries: []
     }
 
     patientsData.push(newPatient);
