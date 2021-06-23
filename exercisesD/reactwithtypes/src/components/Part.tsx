@@ -20,7 +20,6 @@ const Part: React.FC<PartProps> = (props: PartProps) => {
                 renderedParts.push(`name: ${part.name}, description: ${part.description}, exerciseCount: ${part.exerciseCount}, exerciseSubmissionLink: ${part.exerciseSubmissionLink}`);
                 break;
             case 'Full Stack Open':
-                renderedParts.push(`name: ${part.name}, description: ${part.description}, University: ${part.university}`)
                 break;
             default:
                 return assertNever(part);

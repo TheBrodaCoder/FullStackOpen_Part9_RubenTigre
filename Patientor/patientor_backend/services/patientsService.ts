@@ -21,6 +21,10 @@ const getPatientsNoSsn = (): NoSSNpatient [] => {
     }));
 };
 
+const findPatientById = (id: string): Patient | undefined => {
+    return patientsData.find(patient => patient.id === id);
+}
+
 const addPatient = (name: string, occupation: string, gender: Gender, ssn: string, dateOfBirth: string): Patient => {
     const newPatient: Patient = {
         id: idGenerator(),
@@ -39,5 +43,6 @@ const addPatient = (name: string, occupation: string, gender: Gender, ssn: strin
 export default {
     getPatients,
     getPatientsNoSsn,
-    addPatient
+    addPatient,
+    findPatientById
 };
